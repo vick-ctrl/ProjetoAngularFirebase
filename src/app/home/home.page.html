@@ -1,6 +1,69 @@
 <ion-content [fullscreen]="true">
+<!-- menu hamburguinho -->
+    <ion-menu contentId="main-content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Configurar Perfil</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+            <ion-row>
+                <ion-col size"3">
+                    <ion-avatar>
+                        <img src="https://i.pinimg.com/1200x/cf/ce/47/cfce47c752fc323356e58c7589210b53.jpg">
+                    </ion-avatar>
+                </ion-col>
+                <ion-col size"9">
+                    <ion-item>
+                        <ion-label>
+                            Fiona Gallager
+                        </ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>
+                            fifi@gmail.com
+                        </ion-label>
+                    </ion-item>
+                    <ion-item>
+                        @fionaG
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size"12">
+                    <ion-item>
+                        <ion-icon name="keypad-outline" slot="start"></ion-icon>
+                        <ion-label>Alterar senha</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="color-palette-outline" slot="star"></ion-icon>
+                        <ion-label>Alterar Tema</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-icon name="exit-outline" slot="start"></ion-icon>
+                        <ion-label>Desconectar</ion-label>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-title>Pagina Inicial</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding"> 
+            <ion-row>
+                <ion-col size="12">
+                    <ion-datetime></ion-datetime>
+                </ion-col>
+            </ion-row>    
+        </ion-content>
+    </div>
 
-    <ion-button color="secondary">Teste</ion-button>
-    
-    
+
 </ion-content>
