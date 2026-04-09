@@ -12,17 +12,16 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  pokemon:any = {
-    nome: null,
-    poder: null
-  };
+ veiculo: any = {
+  modelo: null,
+  marca: null,
+  cor:null
+ }
+ concessionaria: any = [];
 
-  constructor( 
-    public crudService: CrudService
-  ){ }
 
-  enviar() {
-    this.crudService.insert(this.pokemon, 'pokemons');
-  }
-
+ adicionar(){
+  this.concessionaria.push([{...this.veiculo}]);
+  console.log(this.concessionaria);
+}
 }
