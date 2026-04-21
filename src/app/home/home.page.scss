@@ -1,0 +1,88 @@
+.bg-black {
+  --background: #000;
+  color: #fff;
+}
+.h1 {
+    font-family: "Lora", serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: #ccc;
+
+}
+.titulo {
+  font-family: "Lora", serif;
+  font-size: 28px;      /* bem maior */
+  letter-spacing: 4px;  /* estilo editorial */
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+.titulo,
+.login {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+ 
+}
+ion-label.h1:first-of-type {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+
+}
+ion-item {
+  --background: transparent;
+  --border-color: #333;
+  --highlight-color-focused: #fff;
+  margin-bottom: 10px;
+}
+
+ion-input {
+  color: #fff;
+}
+ion-button {
+  --background: #222;
+  --color: #fff;
+  --border-radius: 4px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+ion-button:hover {
+  --background: #fff;
+  --color: #000;
+}
+ion-col[size="5"] {
+  margin-top: 80px;
+}
+
+ion-label {
+  margin-top: 15px;
+  display: block;
+}
+ .bg-img {
+  position: relative;
+  background-image: url('https://i.pinimg.com/736x/31/fb/f8/31fbf8d9350b5a7c41ca4bde8708368d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  z-index: 2;
+}
+
+
+.bg-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5); /* ajuste a opacidade aqui */
+  z-index: 1;
+}
